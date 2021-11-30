@@ -1,16 +1,25 @@
-a{
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.linavbar{
+    display: flex;
+}
+.imgLogo{
+    height: 25%;
+}
+.linavbar li{
+    white-space:nowrap;
+    margin-right: 10px;
+}
+
+.linavbar li a{
     color: black;
     text-decoration: none;
-    margin: 10px;
     position: relative;
 }
-
-div {
-    display: flex;
-    justify-content: flex-end;
-}
-
-a:after{
+.linavbar li a:after{
     content: '';
     position: absolute;
     width: 100%;
@@ -23,7 +32,7 @@ a:after{
     transition: transform 0.35s ease-out;
 }
 
-a:hover:after{
+.linavbar li a:hover:after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
