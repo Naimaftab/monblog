@@ -1,0 +1,50 @@
+.contactform {
+    margin: 3rem auto 0;
+    max-width: 100%;
+    max-width: 750px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid #51bef5;
+    background: #ffffff;
+    padding: 0 30px 20px;
+    box-shadow: 0px 3px 4px rgba(168, 163, 163, 0.637);
+    position: relative;
+  }
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    color:#8a8c8d;
+    font-family: 'arial';
+  }
+  .formcontent {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr) 105px;
+  }
+  .formcontent input{
+    margin-bottom: 10px;
+    margin: 0px 40px 20px 40px;
+    border:1px solid #999999;
+    border-radius:3px;
+    height: 22px;
+  }
+
+  .buttonsubmit{
+    border: #000000;
+    margin: 20px 10px 0px 285px;
+    background-color: #7fc081;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+  }
+
+  .buttonsubmit:hover{
+    border: #000000;
+    margin: 20px 10px 0px 285px;
+    background-color: #389b3b;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 12px;
+  }
+  

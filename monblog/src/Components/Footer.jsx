@@ -8,7 +8,6 @@ return (
         <li>&copy; Naima Aftab - Tous droits réservés.</li>
         <li><a href="https://example.com">Politique de confidentialité</a></li>
         <li><a href="https://example.com">Mentions légales</a></li>
-        <li><a href="https://example.com">A propos</a></li>
       </ul>
     </div>)
 }
