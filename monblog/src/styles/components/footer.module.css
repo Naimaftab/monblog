@@ -1,11 +1,11 @@
 .monFooter li a{
     text-decoration: none;
-    color: black;  
+    color: rgb(0, 0, 0);  
 }
 .monFooter li a:hover{
     text-decoration: none;
-    color: #51bef5; 
     text-align: center;
+    color:white;
 }
 .monUlFooter{
     display: flex;
@@ -14,6 +14,7 @@
     position: fixed;
     left: 0;
     bottom: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     text-align: center;
+    background-color: rgb(184, 184, 184);
 }

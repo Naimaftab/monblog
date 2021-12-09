@@ -6,9 +6,11 @@
 .linavbar{
     display: flex;
 }
+
 .imgLogo{
-    height: 25%;
+    height: 30px;
 }
+
 .linavbar li{
     white-space:nowrap;
     margin-right: 10px;
@@ -19,6 +21,7 @@
     text-decoration: none;
     position: relative;
 }
+
 .linavbar li a:after{
     content: '';
     position: absolute;
