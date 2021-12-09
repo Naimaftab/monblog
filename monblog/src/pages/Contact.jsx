@@ -11,9 +11,23 @@ export const ContactUs = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
   
+    // const isEmail = () => {
+    //   let mail = document.getElementById('not-mail'); //on pointe ce qui va changer
+    //   let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/; //verifier que c'est bien un email
+
+    //   if (email.match(regex)){ //est ce que l'email match avec la regex
+    //     mail.style.display = 'none'; //Alors on cache le message
+    //     return true; //va permettre de renvoyer le sendfeedback
+    //   }else {
+    //     mail.style.display = 'none';
+    //     return false;
+    //   }
+    // }
+
     const handleSubmit = (e) => {
       e.preventDefault(); // pour que tout sois bien mis dans les states
       //le template ID va aller recupérer les 4 valeur indiquer
+      if (name && email && message){ //fct permettant de faire un true ou false
       sendFeedback("template_91k9m1i", {
         name, //on récupére le states de name
         subjet,
@@ -21,6 +35,9 @@ export const ContactUs = () => {
         email,
         message,
       });
+    }else {
+      console.log('input non remplis');
+    }
     };
   
     const sendFeedback = (templateId, variables) => {
@@ -72,6 +89,8 @@ export const ContactUs = () => {
             placeholder=" Objet"
             value={subjet}
           />
+    
+            {/* <label id='not-mail'>Email non valide</label> */}
             <input
               type="mail"
               id="email"
@@ -81,6 +100,7 @@ export const ContactUs = () => {
               value={email}
               autoComplete="off"
             />
+
           <textarea
             id="message"
             name="message"
