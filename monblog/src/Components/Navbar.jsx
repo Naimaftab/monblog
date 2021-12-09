@@ -1,23 +1,18 @@
 import React from 'react';
-import { NavLink } from "react-router-dom";
-import classNames from '../Components/Navbar';
+import classNames from '../styles/components/navbar.module.css';
 
-const NavBar = () => {
+function NavBar() {
 return (
-    <div className = {classNames.Navbar}>
-      <NavLink exact to="/" activeClassName="nav-active">
-        Accueil
-      </NavLink>
-      <NavLink exact to="/a-propos" activeClassName="nav-active">
-        À propos
-      </NavLink>
-      <NavLink exact to="/contact" activeClassName="nav-active">
-        Contact
-      </NavLink>
-      <NavLink exact to="/se-connecter" activeClassName="nav-active">
-        Se connecter
-      </NavLink>
-    </div>)
+    <nav className = {classNames.navbar}>
+      <div>            
+         <img src="logo192.png" alt="logo site" className = {classNames.imgLogo}/>
+      </div>
+      <ul className= {classNames.linavbar}>
+        <li ><a href="https://example.com">Accueil</a></li>
+        <li><a href="https://example.com">A propos</a></li>
+        <li><a href="/contact">Contact</a></li>
+        <li><a href="https://example.com">Se connecter</a></li>
+      </ul>
+    </nav>)
 }
-
 export default NavBar;

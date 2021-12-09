@@ -1,0 +1,20 @@
+.monFooter li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);  
+}
+.monFooter li a:hover{
+    text-decoration: none;
+    text-align: center;
+    color:white;
+}
+.monUlFooter{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 5px;
+    text-align: center;
+    background-color: rgb(184, 184, 184);
+}
